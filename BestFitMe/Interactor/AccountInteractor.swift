@@ -50,15 +50,14 @@ class AccountInteractor: Interactor {
       .map { RegistrateRequest(parameters: $0) }
       .flatMap {(request) -> Observable<RegistrateInfo> in
         return self.apiClient.send(apiRequest: request)
-      }.subscribe(onNext: {(response) in
-        self.authorization(email: email,
+      }
+      .observeOn(MainScheduler.instance)
+      .subscribe(onNext: {[weak self] (response) in
+        self?.authorization(email: email,
                            password: password)
-      }, onError: {[unowned self] (error) in
+      }, onError: {[weak self] (error) in
         print(error)
-        DispatchQueue.main.async {
-          //MARK: Check if account exist
-          self.errorSubject.onNext(.registration)
-        }
+        self?.errorSubject.onNext(.registration)
       }).disposed(by: disposeBag)
   }
   
@@ -79,16 +78,15 @@ class AccountInteractor: Interactor {
       .map { AuthRequest(parameters: $0) }
       .flatMap {(request) -> Observable<Token> in
         return self.apiClient.send(apiRequest: request)
-      }.subscribe(onNext: {(token) in
-        self.userDefaultsService.save(token: token,
+      }
+      .observeOn(MainScheduler.instance)
+      .subscribe(onNext: {[weak self] (token) in
+        self?.userDefaultsService.save(token: token,
                                       for: email)
-        DispatchQueue.main.async { self.authSubject.onNext(())}
-      }, onError: {[unowned self] (error) in
+        self?.authSubject.onNext(())
+      }, onError: {[weak self] (error) in
         print(error)
-        DispatchQueue.main.async {
-          //MARK: Check if account exist
-          self.errorSubject.onNext(.authorization)
-        }
+        self?.errorSubject.onNext(.authorization)
       }).disposed(by: disposeBag)
   }
   

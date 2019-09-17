@@ -66,16 +66,15 @@ class LicenseAgreementPresenter: Presenter, LicenseAgreementPresenterProtocol {
       .map { LegalRequest(location: $0) }
       .flatMap {(request) -> Observable<Legal> in
         return self.apiClient.send(apiRequest: request)
-        
-      }.subscribe(onNext: {(response) in
+      }
+      .observeOn(MainScheduler.instance)
+      .subscribe(onNext: {[weak self] (response) in
         print("Got legal")
-        DispatchQueue.main.async {[unowned self] in
-          self.view.setAgreementText(response.legal)
-        }
-      }, onError: {[unowned self] (error) in
+        self?.view.setAgreementText(response.legal)
+      }, onError: {[weak self] (error) in
         print(error)
-        self.view.showError(title: "Error".localized(),
-                            message: "Got legal error".localized())
+        self?.view.showError(title: "Error".localized(),
+                             message: "Got legal error".localized())
       }).disposed(by: disposeBag)
   }
   
