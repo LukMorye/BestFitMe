@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FieldsContainer" customModule="BestFitMe" customModuleProvider="target">
+            <connections>
+                <outlet property="emailFIeld" destination="IC2-ZE-jLd" id="rnv-U2-Vj3"/>
+                <outlet property="nameField" destination="LB8-YL-PwT" id="mIh-gC-ggT"/>
+                <outlet property="passwordField" destination="7Ef-dN-Qf6" id="6Dv-ta-CN6"/>
+                <outlet property="phoneField" destination="s2G-wM-TxB" id="0uQ-ca-fzX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="245"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LB8-YL-PwT" userLabel="NameField" customClass="NameField" customModule="BestFitMe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="5" width="375" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Lt7-ck-SO3"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s2G-wM-TxB" userLabel="PhoneField" customClass="PhoneField" customModule="BestFitMe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="65" width="375" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IC2-ZE-jLd" userLabel="EmailField" customClass="LoginField" customModule="BestFitMe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="125" width="375" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Ef-dN-Qf6" userLabel="PasswordField" customClass="PasswordField" customModule="BestFitMe" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="185" width="375" height="40"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="7Ef-dN-Qf6" secondAttribute="bottom" constant="20" id="4D2-Gu-c2Z"/>
+                <constraint firstItem="IC2-ZE-jLd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="6HY-cg-lRL"/>
+                <constraint firstItem="s2G-wM-TxB" firstAttribute="top" secondItem="LB8-YL-PwT" secondAttribute="bottom" constant="20" id="CfE-qp-VWo"/>
+                <constraint firstItem="s2G-wM-TxB" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="GLZ-uu-slC"/>
+                <constraint firstItem="IC2-ZE-jLd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="HBV-ic-0hD"/>
+                <constraint firstItem="7Ef-dN-Qf6" firstAttribute="height" secondItem="IC2-ZE-jLd" secondAttribute="height" id="Mlt-YQ-e4d"/>
+                <constraint firstItem="7Ef-dN-Qf6" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YGQ-Bz-bsZ"/>
+                <constraint firstItem="7Ef-dN-Qf6" firstAttribute="top" secondItem="IC2-ZE-jLd" secondAttribute="bottom" constant="20" id="b6m-wg-F1n"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LB8-YL-PwT" secondAttribute="trailing" id="dq0-vh-i23"/>
+                <constraint firstItem="IC2-ZE-jLd" firstAttribute="height" secondItem="s2G-wM-TxB" secondAttribute="height" id="hb3-i5-5hb"/>
+                <constraint firstItem="LB8-YL-PwT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jUm-N2-wlz"/>
+                <constraint firstItem="s2G-wM-TxB" firstAttribute="height" secondItem="LB8-YL-PwT" secondAttribute="height" id="jZa-yH-cKY"/>
+                <constraint firstItem="s2G-wM-TxB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mJh-Uf-Vfm"/>
+                <constraint firstItem="LB8-YL-PwT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="pGo-3R-X90"/>
+                <constraint firstItem="7Ef-dN-Qf6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="q8L-r9-S1x"/>
+                <constraint firstItem="IC2-ZE-jLd" firstAttribute="top" secondItem="s2G-wM-TxB" secondAttribute="bottom" constant="20" id="uNa-EX-RUV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>Title</key>
+		<string>Наша миссия</string>
+		<key>Details</key>
+		<string>Мы создали BestFitMe с одной целью — сделать мир лучше.\nДля этого мы помогаем людям понимать себя и окружающих. </string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Как работает приложение</string>
+		<key>Details</key>
+		<string>Нам достаточно короткого видео лица человека, чтобы создать его психологический профиль. Другими словами — найти его внутренний психологический стержень, с которым человек проживет всю жизнь. </string>
+	</dict>
+	<dict>
+		<key>Title</key>
+		<string>Для чего это нужно</string>
+		<key>Details</key>
+		<string>Вы сможете взглянуть на себя со стороны,  оценить свои сильные и слабые стороны и научиться эффективно их использовать в работе, переговорах и отношениях. А также получите возможность лучше узнать окружающих.</string>
+	</dict>
+</array>
+</plist>

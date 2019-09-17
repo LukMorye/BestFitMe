@@ -1,0 +1,61 @@
+/* 
+  Localizable.strings
+  BestFitMe
+
+  Created by Титов Валентин on 17/07/2019.
+  Copyright © 2019 BestFitMe. All rights reserved.
+*/
+//MARK: Common
+"Yes" = "Да";
+"No" = "Нет";
+"Ok" = "Ок";
+"Error" = "Ошибка";
+"Warning" = "Предупреждение";
+"Close" = "Закрыть";
+"Cancel" = "Отмена";
+"Delete" = "Удалить";
+"Not shure" = "Отмена";
+"Back" = "Назад";
+"Enter" = "Войти";
+"Done" = "Готово";
+"Accept" = "Понятно";
+"Continue" = "Продолжить";
+"Select" = "Выбрать";
+"Share" = "Share";
+"Code" = "Код ошибки";
+"Wait" = "Пожалуйста, подождите…";
+"Lost connection" = "Отсутствует соединение с интернетом";
+"Need connection" = "Для работы с этим приложением необходимо интернет-соединение";
+"Unknown error" = "Неизвестная ошибка. Пожалуйста, повторите попытку позже";
+//MARK: SignUp / SignIn
+/* SignUp / SignIn placeholders */
+"Registration name placeholder" = "Имя";
+"Registration phone placeholder" = "Телефон";
+"Registration email placeholder" = "E-mail";
+"Registration password placeholder" = "Пароль";
+"Registration complete title" = "Подтвердите почту";
+"Registration complete message" = "Спасибо за регистрацию!\nНа укзанный email отправлено письмо.\n\nПосле подтверждения почты вам будет бесплатно доступно\n2 полных психологических отчета.";
+"Registration limit message" = "Вы можете использовать приложение бесплатно %d дней";
+"Continue" = "Продолжить";
+"Sign Up" = "Регистрация";
+/* SignUp / SignIn errors */
+"Email is not valid" = "Невалидный e-mail";
+"Password is too short" = "Слишком короткий пароль";
+"Name empty" = "Невалидное имя";
+"Phone empty" = "Невалидный номер телефона";
+"Phone is not valid" = "Некорректный телефон";
+"Password is too short" = "Слишком короткий пароль";
+"All fields are required" = "Все поля являются обязательными";
+"App registration error" = "Произошла ошибка. Проверьте соединение и перезапустите приложение.";
+"Account already exist" = "Аккаунт с таким пользователем уже существует.";
+"Registration error" = "Ошибка регистрации. Пожалуйста, повторите попытку позже";
+"User not found" = "Неверный логин или пароль";
+"Authorization error" = "Ошибка авторизации. Пожалуйста, повторите попытку позже";
+/* License Titles */
+"I agree with terms" = "Я согласен с условиями";
+"Should agree message" = "Для продолжения необходимо принять условия пользовательского соглашения";
+"License agreement" = "Пользовательского соглашения";
+"License agreement will be here soon" = "Загружаем текст соглашения…";
+"License agreement title" = "Лицензионное соглашение";
+"License agreement load details" = "Загружаем текст соглашения…";
+"Got legal error" = "Ошибка во время загрузки лицензионного соглашения. Пожалуйста, повторите попытку позже";
